@@ -27,7 +27,7 @@ class _OnBoardingState extends State<OnBoarding> {
         desc: "we are here always to support all your matches"),
     OnboardingContent(
         imgUrl: "assets/images/onboard3.png",
-        title: "Be The Champion",
+        title: "Be The Champion!",
         desc: "Win all the available matches and Be The Champion"),
   ];
 
