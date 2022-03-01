@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ui_goent/theme.dart';
 import 'package:ui_goent/widgets/media_query.dart';
 
 
-class OnboardingContent extends StatelessWidget {
+class OnBoardingContent extends StatelessWidget {
   final String title;
   final String desc;
   final String imgUrl;
 
 
-  const OnboardingContent({required this.imgUrl, required this.title, required this.desc}) ;
+  const OnBoardingContent({required this.imgUrl, required this.title, required this.desc}) ;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class OnboardingContent extends StatelessWidget {
            child: Container(
              height: displayHeight(context) * 45,
              width: double.infinity,
-             decoration: BoxDecoration(
+             decoration: const BoxDecoration(
                borderRadius: BorderRadius.only(topLeft: Radius.circular(25),topRight: Radius.circular(25) ),
                color: Colors.white,
              ),
