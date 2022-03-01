@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_goent/pages/onboard_screen.dart';
+import 'package:ui_goent/pages/on_board_screen.dart';
 import 'package:ui_goent/theme.dart';
 
 void main() {
@@ -14,11 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData (
-        fontFamily: "Nunito",
+        fontFamily: 'Nunito',
         primaryColor: colorPrimary,
       ),
       routes: {
-        '/': (context) => OnBoarding(),
+        '/': (context) => const OnBoarding(),
         // '/login': (context) => LoginPage(),
       },
     );
