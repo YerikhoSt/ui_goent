@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:ui_goent/theme.dart';
+import 'package:ui_goent/pages/login_page.dart';
 import 'package:ui_goent/models/on_board_model.dart';
 import 'package:ui_goent/widgets/media_query.dart';
 
@@ -61,6 +63,10 @@ class _OnBoardingState extends State<OnBoarding> {
                     _controller.nextPage(
                         duration: const Duration(milliseconds: 800),
                         curve: Curves.easeInOutQuint);
+
+                         if(_currentPage ==(_pages.length -1)){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginPage(),));
+                    }
                   },
                   child: (_currentPage == (_pages.length - 1)
                       ? Text(
